@@ -1,6 +1,7 @@
 # Import the create_cd_account and create_savings_account functions
 from savings_account import create_savings_account
 from cd_account import create_cd_account
+from utils import print_custom
 
 # Define the main function
 def main():
@@ -17,7 +18,9 @@ def main():
     updated_savings_balance, interest_earned = create_savings_account(savings_balance, savings_int_rate, savings_maturity)
 
     # Print out the interest earned and updated savings account balance with interest earned for the given months.
-    print("IE", interest_earned, "usavings", updated_savings_balance)
+    print_custom("Savings Account")
+    print(f"Interest Earned: {interest_earned}", 
+        f"Balance: {updated_savings_balance}", sep="\n", end="\n\n")
 
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     cd_balance = float(input("What is your initial CD account balance?"))
@@ -28,7 +31,9 @@ def main():
     updated_cd_balance, interest_earned = create_cd_account(cd_balance, cd_interest, cd_maturity)
 
     # Print out the interest earned and updated CD account balance with interest earned for the given months.
-    print("IE", interest_earned, "usavings", updated_cd_balance)
+    print_custom("CD Account")
+    print(f"Interest Earned: {interest_earned}", 
+        f"Balance: {updated_cd_balance}", sep="\n", end="\n\n")
 
 if __name__ == "__main__":
     # Call the main function.
