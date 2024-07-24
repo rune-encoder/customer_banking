@@ -19,8 +19,8 @@ def main():
 
     # Print out the interest earned and updated savings account balance with interest earned for the given months.
     print_custom("Savings Account")
-    print_label("Interest Earned:", interest_earned)
-    print_label("Balance:", updated_savings_balance)
+    print_label("Interest Earned", interest_earned)
+    print_label("Balance", updated_savings_balance)
 
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     cd_balance = float(input("\nWhat is your initial CD account balance? "))
@@ -32,8 +32,8 @@ def main():
 
     # Print out the interest earned and updated CD account balance with interest earned for the given months.
     print_custom("CD Account")
-    print_label("Interest Earned:", interest_earned)
-    print_label("Balance:", updated_cd_balance)
+    print_label("Interest Earned", interest_earned)
+    print_label("Balance", updated_cd_balance)
 
 if __name__ == "__main__":
     # Call the main function.
